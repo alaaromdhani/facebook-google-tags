@@ -1,3 +1,4 @@
+const baseFrontUrl = 'https://vercel.com/alaaromdhani/facebook-google-tags/J6zdrpQZRwqMSLnse8Z1tG1reVKe'
 (async function wow(){
     console.log('executing the route')
     await guardRoute()
@@ -22,7 +23,7 @@ async function login(credentials){
 }
 function changeLocation(loc){
 
-    return (document.location.href === 'http://127.0.0.1:5500/articuate/'+loc+'.html')?'':document.location.href = 'http://127.0.0.1:5500/articuate/'+loc+'.html'
+    return (document.location.href === baseFrontUrl+'/'+loc+'.html')?'':document.location.href = baseFrontUrl+'/'+loc+'.html'
 }
 async function guardRoute(){
     try{
