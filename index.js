@@ -1,4 +1,4 @@
-const baseFrontUrl = 'https://vercel.com/alaaromdhani/facebook-google-tags/J6zdrpQZRwqMSLnse8Z1tG1reVKe'
+const baseFrontUrl = 'https://vercel.com/alaaromdhani/facebook-google-tags/J6zdrpQZRwqMSLnse8Z1tG1reVKe';
 (async function wow(){
     console.log('executing the route')
     await guardRoute()
