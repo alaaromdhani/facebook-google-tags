@@ -1,55 +1,68 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
+  <head>
+    <!-- Google tag (gtag.js) -->
+    <script>
+      (function (w/*window*/, d/*document*/, s/*script*/, l/*dataLayer*/, i/*"GTM-5J297CHT"*/) {
+        w[l] = w[l] || [];
+        w[l].push({ "gtm.start": new Date().getTime(), event: "gtm.js" });
+        var f = d.getElementsByTagName(s)[0],
+          j = d.createElement(s),
+          dl = l != "dataLayer" ? "&l=" + l : "";
+        j.async = true;
+        j.src = "https://www.googletagmanager.com/gtm.js?id=" + i + dl;
+        f.parentNode.insertBefore(j, f);
+      })(window, document, "script", "dataLayer", "GTM-5J297CHT");
+    </script>
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=G-0C5VH5KJP2"
+    ></script>
 
-  <!-- Google tag (gtag.js) -->
-<script>
-  (function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
-new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
-j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
-'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
-})(window,document,'script','dataLayer','GTM-5J297CHT');
-</script>
-  <script async src="https://www.googletagmanager.com/gtag/js?id=G-0C5VH5KJP2"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
 
-<script>
-  window.dataLayer = window.dataLayer || [];
-  
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
 
-  gtag('config', 'G-0C5VH5KJP2');
-</script>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      gtag("config", "G-0C5VH5KJP2");
+    </script>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-</head>
-<body>
-  <!-- Google Tag Manager (noscript) -->
-<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-5J297CHT"
-  height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
-  <!-- End Google Tag Manager (noscript) -->
-    
-    <div style="display: grid;gap: 10px;">
-      <a href=""> home page </a>  
- 
-      <a href=""> home page </a>  
-      <a href=""> home page </a>  
+  </head>
+  <body>
+    <!-- Google Tag Manager (noscript) -->
+    <noscript
+      ><iframe
+        src="https://www.googletagmanager.com/ns.html?id=GTM-5J297CHT"
+        height="0"
+        width="0"
+        style="display: none; visibility: hidden"
+      ></iframe
+    ></noscript>
+    <!-- End Google Tag Manager (noscript) -->
+
+    <div style="display: grid; gap: 10px">
+      <a href=""> home page </a>
+
+      <a href=""> home page </a>
+      <a href=""> home page </a>
     </div>
- 
-    <h1> welcome to my website</h1>
-    <input type="text" id="identifier">
-    <input type="text" id="password">
-    <input type="button" value="login" id="login">
+
+    <h1>welcome to my website</h1>
+    <form id="loginform">
+      <input type="text" id="identifier" />
+      <input type="text" id="password" />
+      <input type="submit" value="login" id="login" />
+
+    </form>
     <!--<iframe src="" frameborder="0">
 
 
     </iframe>-->
-    <script src="index.js">
-  
-      
-  </script>
-    
-</body>
-
+    <script src="index.js"></script>
+  </body>
 </html>
