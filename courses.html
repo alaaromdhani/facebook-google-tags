@@ -1,61 +1,30 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+   <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-</head>
-<body>
-    <div style="display: grid;gap: 10px;">
-        <a href=""> home page </a>  
-   
-        <a href=""> courses </a>  
+  </head>
+  <body>
+    <!-- Google Tag Manager (noscript) -->
+    
+    <!-- End Google Tag Manager (noscript) -->
+
+    <div style="display: grid; gap: 10px">
+      <a id="add_to_cart_button" href=""> add to cart </a>
+      <a href=""> register </a>
+      <a href=""> sign-in </a>
     </div>
-    <script>
-        async function getProfile(){
-            return fetch('http://localhost:1337/front/student/api/v1/profile',{
-                method:'GET',
-                credentials:'include'
-            })
-        }
-         (async function wow(){
-            console.log('executing the route')
-            await guardRoute()
 
-        })()
-        let currentUser
-        function changeLocation(loc){
+    <h1>welcome to my website</h1>
+    <form id="loginform">
+      <input type="text" id="identifier" />
+      <input type="text" id="password" />
+      <input type="submit" value="login" id="login" />
 
-        return (document.location.href === 'http://127.0.0.1:5500/articuate/'+loc+'.html')?'':document.location.href = 'http://127.0.0.1:5500/articuate/'+loc+'.html'
-        }
-           async function guardRoute(){
-            try{
-               
-                result = await getProfile()
-                if(result.status>300){
-                    changeLocation('index')
-                }
-                else{
-                    console.log(result)    
-                }
-
-
-               
-                
-                
-            }
-            catch(e){
-                if(e.status===403){
-                    changeLocation('index')
-                } 
-                else{
-                    changeLocation('Error')
-            
-                }
-             }
-
-        }
-    </script>
-  
-</body>
+    </form>
+    
+    
+    <script src="index.js"></script>
+  </body>
 </html>
